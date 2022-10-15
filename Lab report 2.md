@@ -78,7 +78,7 @@ The "add" get called and also add the word "apple" into the array.
 ![Image](lab2_1_3.png)
 
 The "search" get called, it searchs which words contain "app" and show us.
-As we can see, both pineapple and aplle contain "app".
+As we can see, both pineapple and apple contain "app".
 ![Image](lab2_1_4.png)
 
 # Part 2
@@ -87,7 +87,7 @@ As we can see, both pineapple and aplle contain "app".
 This is the input I run for reversed function:
 ![Image](lab2_1.png)
 
-The symptoms and errors got from running with Junit:
+The symptoms and errors got from running with JUnit:
 We can see all three inputs failed, and we can see the array always contain zero, and it is different from what we should expect.
 
 First input result:
@@ -112,14 +112,14 @@ Conclusion for bug fixing on reversed function, connection between the symptom a
 This is the input I tested for the merged function in ListExample.java.
  ![Image](lab2_7.png)
 
-The symptoms and errors got from running with Junit:
-We can see all two inputs failed, and Junit show that the symtom is "java.;ang.OutOfMemoryError: Java heap space"
+The symptoms and errors got from running with JUnit:
+We can see all two inputs failed, and JUnit show that the symtom is "java.;ang.OutOfMemoryError: Java heap space"
  ![Image](lab2_8.png)
 
 In the image below, we fixed the bug of the merge function and it is a simple bug fixed, we change "index+=1" to "index2+=1" in line 44 with the red circle! 
  ![Image](lab2_9.png)
 
- After fixing the bug, we run it with Junit again and get success for both tested input.
+ After fixing the bug, we run it with JUnit again and get success for both tested input.
  ![Image](lab2_10.png)
 
  Conclusion for bug fixing on merge function, connection between the symptom and the bug: The bug of the function is on line 44, in the original (not fix) merge function, it was index1+=1, which should change to index2+=1, because it should add list2 into the new array not list1. As a result, it casues java.;ang.OutOfMemoryError: Java heap space as a symptom.  
