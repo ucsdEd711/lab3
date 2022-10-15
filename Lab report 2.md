@@ -61,28 +61,33 @@ public class SearchEngine {
     }
 }
 ```
-When entering javac Server.java ... remember to change NumberServer.java to SearchEngine.java! Don't make thhe same mistake like I did.
+When entering javac Server.java ... remember to change NumberServer.java to SearchEngine.java! Don't make the same mistake like I did.
 
 First move:
 The equals("/") get called, since in the URL there is no more words after /. It also shows the empty array, becasue the "add" haven't be called yet.
 ![Image](lab2_1_0.png)
-The "add" get called and also add the word anewstringtoadd into the array.
+
+The "add" get called and also add the word "anewstringtoadd" into the array.
+
 ![Image](lab2_1_1.png)
-The "add" get called and also add the word pineappele into the array.
+The "add" get called and also add the word "pineappele" into the array.
+
 ![Image](lab2_1_2.png)
-The "add" get called and also add the word appele into the array.
+The "add" get called and also add the word "apple" into the array.
+
 ![Image](lab2_1_3.png)
+
 The "search" get called, it searchs which words contain "app" and show us.
 As we can see, both pineapple and aplle contain "app".
 ![Image](lab2_1_4.png)
 
 # Part 2
-# First: Bug in ArrayExample.java and reversed:
+# First: Bug in ArrayExample.java (The reversed function):
 
 This is the input I run for reversed function:
 ![Image](lab2_1.png)
 
-The symtoms and errors got from running with Junit:
+The symptoms and errors got from running with Junit:
 We can see all three inputs failed, and we can see the array always contain zero, and it is different from what we should expect.
 
 First input result:
@@ -100,16 +105,14 @@ In the image below, we fixed the bug of the reversed function, we correctly assi
 After fixing the bugs, all three tests success.
 ![Image](lab2_6.png)
 
-Conclusion for bug fixing on reversed function, connection between the symptom and the bug: The issue in the function reversed is that, in the original(no fix) reversed method, it returns the old array(arr), instead of the new array (newArray). Also, inside the loop, we can see it actually store the value of new array into the old array, which new array is always set to 0. Ans that's the reason why the output are always 0 and didn;t meet the expection.
+Conclusion for bug fixing on reversed function, connection between the symptom and the bug: The issue in the function reversed is in the original (no fix) reversed method, it returns the old array(arr), instead of the new array  (newArray). Also, inside the loop, we can see it actually store the value of new array into the old array, which new array is always set to 0. That's the reason why the output are always 0 and didn't meet the expection.
 
-
-
-# Second: Bug in ListExample.java and merged:
+# Second: Bug in ListExample.java (The merge function):
 
 This is the input I tested for the merged function in ListExample.java.
  ![Image](lab2_7.png)
 
-The symtoms and errors got from running with Junit:
+The symptoms and errors got from running with Junit:
 We can see all two inputs failed, and Junit show that the symtom is "java.;ang.OutOfMemoryError: Java heap space"
  ![Image](lab2_8.png)
 
