@@ -64,20 +64,20 @@ public class SearchEngine {
 When entering javac Server.java ... remember to change NumberServer.java to SearchEngine.java! Don't make the same mistake like I did.
 
 First move:
-The equals("/") get called, since in the URL there is no more words after /. It also shows the empty array, becasue the "add" haven't be called yet.
+The method handleRequest get called. In the first if statement, we let the url getPath() equal to "/", it will show the string inside of the string arraylist. It showed the empty array, becasue we haven't add any string into the string array list yet.
 ![Image](lab2_1_0.png)
 
-The "add" get called and also add the word "anewstringtoadd" into the array.
+The method handleRequest get called. In the else if statement,we set that when the url getPath() contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "anewstringtoadd" got added into the string[] array list.
 
 ![Image](lab2_1_1.png)
-The "add" get called and also add the word "pineappele" into the array.
+The method handleRequest get called. In the else if statement,we set that when the url getPath() contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "pineapple" got added into the string[] array list. So right now the string array list contain both anewstringtoadd and pineapple. 
 
 ![Image](lab2_1_2.png)
-The "add" get called and also add the word "apple" into the array.
+The method handleRequest get called. In the else if statement,we set that when the url getPath() contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "apple" got added into the string[] array list. So right now the string array list contains anewstringtoadd, pineapple and apple. 
 
 ![Image](lab2_1_3.png)
 
-The "search" get called, it searchs which words contain "app" and show us.
+The method handleRequest get called. After the url, in the else if statement, we set that when the url getPath() contains "/search" query. In the for loop, we set that if the word contain the sub string (Par[1]) user provided with indexOf() not equal to -1, it will add it to the string array list and finally print them out.
 As we can see, both pineapple and apple contain "app".
 ![Image](lab2_1_4.png)
 
@@ -99,7 +99,7 @@ Second input result:
 Third input result:
 ![Image](lab2_4.png)
 
-In the image below, we fixed the bug of the reversed function, we correctly assign the numbers to the newArray not the old array and change "return arr" to "return newArray". 
+In the image below, we fixed the bug of the reversed function, we correctly assign the numbers to the newArray not the old array and change "return arr" to "return newArray". The original reversed function is wrong because the original array got assigned to the new array which is automatically set to an empty array, and it returns the original array which is empty, so that's why it always return 0 and not the number expected.  
 ![Image](lab2_5.png)
 
 After fixing the bugs, all three tests success.
@@ -116,7 +116,7 @@ The symptoms and errors got from running with JUnit:
 We can see all two inputs failed, and JUnit show that the symtom is "java.;ang.OutOfMemoryError: Java heap space"
  ![Image](lab2_8.png)
 
-In the image below, we fixed the bug of the merge function and it is a simple bug fixed, we change "index+=1" to "index2+=1" in line 44 with the red circle! 
+In the image below, we fixed the bug of the merge function and it is a simple bug fixed, we change "index+=1" to "index2+=1" in line 44 with the red circle! The original function is wrong becasue we supposed to add list2 into the new array, but it is actually list1 get increased not list2. When index2 didn't get incresed, the while loop will not end so it will casue "java.;ang.OutOfMemoryError: Java heap space". 
  ![Image](lab2_9.png)
 
  After fixing the bug, we run it with JUnit again and get success for both tested input.
