@@ -64,20 +64,20 @@ public class SearchEngine {
 When entering javac Server.java ... remember to change NumberServer.java to SearchEngine.java! Don't make the same mistake like I did.
 
 First move:
-The method handleRequest get called. In the first if statement, we let the url getPath() equal to "/", it will show the string inside of the string arraylist. It showed the empty array, becasue we haven't add any string into the string array list yet.
+The method `handleRequest()` get called. In the first if statement, we set that when the after url `localhost:4000 `, `getPath()` equal to "/", it will show the string inside of the string arraylist. It showed the empty array, becasue we haven't add any string into the string array list yet.
 ![Image](lab2_1_0.png)
 
-The method handleRequest get called. In the else if statement,we set that when the url getPath() contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "anewstringtoadd" got added into the string[] array list.
+The method `handleRequest()` get called. In the else if statement, we set that when the after url `localhost:4000 `, `getPath()` contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "anewstringtoadd" got added into the string[] array list.
 
 ![Image](lab2_1_1.png)
-The method handleRequest get called. In the else if statement,we set that when the url getPath() contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "pineapple" got added into the string[] array list. So right now the string array list contain both anewstringtoadd and pineapple. 
+The method `handleRequest()` get called. In the else if statement,we set that when the after url `localhost:4000 `, `getPath()` contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "pineapple" got added into the string[] array list. So right now the string array list contain both anewstringtoadd and pineapple. 
 
 ![Image](lab2_1_2.png)
-The method handleRequest get called. In the else if statement,we set that when the url getPath() contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "apple" got added into the string[] array list. So right now the string array list contains anewstringtoadd, pineapple and apple. 
+The method `handleRequest()` get called. In the else if statement,we set that when the after url `localhost:4000`, contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "apple" got added into the string[] array list. So right now the string array list contains anewstringtoadd, pineapple and apple. 
 
 ![Image](lab2_1_3.png)
 
-The method handleRequest get called. After the url, in the else if statement, we set that when the url getPath() contains "/search" query. In the for loop, we set that if the word contain the sub string (Par[1]) user provided with indexOf() not equal to -1, it will add it to the string array list and finally print them out.
+The method `handleRequest()` get called. After the url `localhost:4000`, in the else if statement, we set that when the url `getPath()` contains "/search" query. In the for loop, we set that if the word contain the sub string (Par[1]) user provided with indexOf() not equal to -1, it will add it to the string array list and finally print them out.
 As we can see, both pineapple and apple contain "app".
 ![Image](lab2_1_4.png)
 
