@@ -70,10 +70,10 @@ The method `handleRequest()` get called. In the first if statement, we set that 
 The method `handleRequest()` get called. In the else if statement, we set that when the after url `localhost:4000 `, `getPath()` contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "anewstringtoadd" got added into the string[] array list.
 
 ![Image](lab2_1_1.png)
-The method `handleRequest()` get called. In the else if statement,we set that when the after url `localhost:4000 `, `getPath()` contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "pineapple" got added into the string[] array list. So right now the string array list contain both anewstringtoadd and pineapple. 
+The method `handleRequest()` get called. In the else if statement, we set that when the after url `localhost:4000 `, `getPath()` contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "pineapple" got added into the string[] array list. So right now the string array list contain both anewstringtoadd and pineapple. 
 
 ![Image](lab2_1_2.png)
-The method `handleRequest()` get called. In the else if statement,we set that when the after url `localhost:4000`, contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "apple" got added into the string[] array list. So right now the string array list contains anewstringtoadd, pineapple and apple. 
+The method `handleRequest()` get called. In the else if statement, we set that when the after url `localhost:4000`, contains "/add" query, we add the second word in the Par array (the first one is "s") into string array list. So in this part "apple" got added into the string[] array list. So right now the string array list contains anewstringtoadd, pineapple and apple. 
 
 ![Image](lab2_1_3.png)
 
